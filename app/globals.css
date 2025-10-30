@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: #000000;
+  background: #ffffff;
+  padding-top: 64px; /* Height of fixed navbar (h-16 = 64px) */
+}
+
+* {
+  color: inherit;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-black font-semibold py-2 px-4 rounded-lg border-2 border-primary-600 transition-colors duration-200;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none text-black;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300;
+  }
+}
+
+/* Force all text to be black */
+h1, h2, h3, h4, h5, h6, p, span, div, a, label, input, textarea, select, button {
+  color: #000000 !important;
+}
+
+/* Exceptions for elements that need different colors */
+.text-white, .btn-primary, .btn-primary * {
+  color: #ffffff !important;
+}
+
+.text-primary-600, .text-primary-700 {
+  color: #000000 !important;
+}
+
+.text-gray-500, .text-gray-600, .text-gray-700 {
+  color: #000000 !important;
+}
+
+.text-red-600, .text-red-800 {
+  color: #dc2626 !important;
+}
+
+.text-green-600, .text-green-800 {
+  color: #16a34a !important;
+}
+
+.text-blue-600, .text-blue-800 {
+  color: #2563eb !important;
+}
+
+.text-yellow-600, .text-yellow-800 {
+  color: #ca8a04 !important;
+}
+
+.text-purple-600, .text-purple-800 {
+  color: #9333ea !important;
+}
