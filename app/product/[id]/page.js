@@ -572,7 +572,7 @@ export default function ProductDetailPage() {
                     {userReview && (
                       <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
                         <p className="text-sm text-blue-800">
-                          ✏️ You're editing your existing review
+                          ✏️ You&apos;re editing your existing review
                         </p>
                       </div>
                     )}

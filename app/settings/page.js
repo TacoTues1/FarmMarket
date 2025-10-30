@@ -234,7 +234,7 @@ export default function SettingsPage() {
                       placeholder="you@example.com"
                     />
                     <p className="text-xs text-gray-500 mt-1">
-                      You'll need to verify a new email address
+                      You&apos;ll need to verify a new email address
                     </p>
                   </div>
                 </div>
